@@ -1,0 +1,30 @@
+{
+    "FI": {
+        "title": "Projektit",
+        "projectTitle": "Pizza verkkokauppa - Front-End",
+        "projectTitle2": "Pizza verkkokauppa - Back-End",
+        "sectionButton": "Esittely",
+        "sectionButton2": "Teknologiat",
+        "introduction": "Valitse täytteet pizzaasi ja tilaa. Tämä harjoitusprojekti koostuu front-end:stä and back-end:stä. Voit olla kirjautumatta tai kirjautua sisään ennen tilausta. Kirjautumalla näet tilaushistoriasi myöhemmin. Käyttäjät voivat kirjautumisen jälkeen myös muokata käyttäjätietojaan.",
+        "introduction2": "Tämä on pizza verkkokaupan back-end. Se on yhteydessä tietokantaan, jonne sekä käyttäjät että tilaukset tallennetaan. Jotkin rajapinnat vaativat käyttäjän autentikointia, joka hoidetaan tokenin avulla. Rajapinnat: GET \"/\", POST \"/login\", POST \"/users\", GET \"/users/:username\", PUT \"/users/:username\", GET \"/users/:username/orders\" sekä POST \"/orders\".",
+        "technologies": "React, TypeScript, Axios, InkScape",
+        "technologies2": "NodeJS, Express, JavaScript, Mongoose, Bcrypt, JSONWebToken, dotenv",
+        "linkExplanation": "Kokeile Herokussa!",
+        "linkExplanation2": "Näytä koodi Gitlabissa!",
+        "endTitle": "Kiitos mielenkiinnosta!"
+    },
+    "EN": {
+        "title": "Projects",
+        "projectTitle": "Online Pizza Store - Front-End",
+        "projectTitle2": "Online Pizza Store - Back-End",
+        "sectionButton": "Introduction",
+        "sectionButton2": "Technologies",
+        "introduction": "Create your own pizza and make an order. This practise project consists of front-end and back-end. Orders can be made either after or without logging in, and in the former case users can view their ordering history. Users can modify their information after the sign up process also.",
+        "introduction2": "This is the back-end for the online pizza store. It is connected to a database where users and orders are stored. Certain APIs need the user to be authenticated, which is taken care of with a token. Available paths: GET \"/\", POST \"/login\", POST \"/users\", GET \"/users/:username\", PUT \"/users/:username\", GET \"/users/:username/orders\" and POST \"/orders\".",
+        "technologies": "React, TypeScript, Axios, InkScape",
+        "technologies2": "NodeJS, Express, JavaScript, Mongoose, Bcrypt, JSONWebToken, dotenv",
+        "linkExplanation": "Try the app in Heroku!",
+        "linkExplanation2": "See the code in Gitlab!",
+        "endTitle": "Thank you, for your interest!"
+    }
+}

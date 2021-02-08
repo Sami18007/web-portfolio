@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebPortfolio</title>
+        <link rel="icon" type="image/png" href="./images/favicon.png"/>
+        <link href="./src/styles/styles.css" rel="stylesheet" />
+        <link href="./fonts/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet" />
+        <script src="./src/scripts/scripts.js"></script>
+    </head>
+
+    <body>
+        <header id="header">
+            <div>
+                <a href="./index-en.html">EN</a>
+            </div>
+            <h1>Projektit</h1>
+        </header>
+
+        <nav>
+            <div>
+                <a href="#section-1">
+                    <div>Project 1</div>
+                    <div class="border-bottom"></div>
+                </a>
+
+                <a href="#section-2">
+                    <div>Project 2</div>
+                    <div class="border-bottom"></div>
+                </a>
+
+                <!-- <a href="#section-3">
+                    <div>Project 3</div>
+                    <div class="border-bottom"></div>
+                </a>
+
+                <a href="#section-4">
+                    <div>Project 4</div>
+                    <div class="border-bottom"></div>
+                </a>
+
+                <a href="#section-5">
+                    <div>Project 5</div>
+                    <div class="border-bottom"></div>
+                </a> -->
+                
+            </div>
+
+        </nav>
+
+        <main>
+            <section id="section-1" class="section">
+                <h1 class="flex-left">Pizza verkkokauppa - Front-End</h1>
+
+                <div class="section-window float-right" onclick="showImage(0)"></div>
+
+                <div class="section-content flex-left">
+                    <div class="section-nav">
+                        <button onclick="showIntroduction(0)">
+                            <div>Esittely</div>
+                            <div class="border-bottom"></div>
+                        </button>
+
+                        <button onclick="showTechnology(0)">
+                            <div>Teknologiat</div>
+                            <div class="border-bottom"></div>
+                        </button>
+
+                    </div>
+
+                    <div class="hiddable-content">
+                        <div class="section-introduction hiddable">
+                            Valitse täytteet pizzaasi ja tilaa. Tämä harjoitusprojekti 
+                            koostuu front-end:stä and back-end:stä. Voit olla kirjautumatta 
+                            tai kirjautua sisään ennen tilausta. Kirjautumalla näet 
+                            tilaushistoriasi myöhemmin. Käyttäjät voivat kirjautumisen 
+                            jälkeen myös muokata käyttäjätietojaan.
+                        </div>
+
+                        <div class="section-details hiddable">
+                            React, TypeScript, Axios, InkScape
+                        </div>
+
+                    </div>
+
+                    <div class="content-links">
+                        <a
+                            href="https://my-online-store-frontend.herokuapp.com/menu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data="Kokeile Herokussa!"
+                        >
+                            <i class="far fa-play-circle"></i>
+                        </a>
+
+                        <a
+                            href="https://gitlab.com/SamiAa/online-store-frontend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data="Näytä koodi Gitlabissa!"
+                        >
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="section-2" class="section clear-float">
+                <h1 class="push-right">Pizza verkkokauppa - Back-End</h1>
+
+                <div class="section-window float-left" onclick="showImage(1)"></div>
+
+                <div class="section-content">
+                    <div class="section-nav">
+                        <button onclick="showIntroduction(1)">
+                            <div>Esittely</div>
+                            <div class="border-bottom"></div>
+                        </button>
+
+                        <button onclick="showTechnology(1)">
+                            <div>Teknologiat</div>
+                            <div class="border-bottom"></div>
+                        </button>
+
+                    </div>
+
+                    <div class="hiddable-content">
+                        <div class="section-introduction hiddable">
+                            Tämä on pizza verkkokaupan back-end. Se on yhteydessä 
+                            tietokantaan, jonne sekä käyttäjät että tilaukset tallennetaan. 
+                            Jotkin rajapinnat vaativat käyttäjän autentikointia, joka 
+                            hoidetaan tokenin avulla. Rajapinnat: GET "/", POST "/login", 
+                            POST "/users", GET "/users/:username", PUT "/users/:username", 
+                            GET "/users/:username/orders" sekä POST "/orders".
+                        </div>
+
+                        <div class="section-details hiddable">
+                            NodeJS, Express, JavaScript, Mongoose, Bcrypt, 
+                            JSONWebToken, dotenv
+                        </div>
+
+                    </div>
+                    
+                    <div class="content-links">
+                        <a
+                            href="https://my-online-store-backend.herokuapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data="Kokeile Herokussa!"
+                        >
+                            <i class="far fa-play-circle"></i>
+                        </a>
+
+                        <a
+                            href="https://gitlab.com/SamiAa/online-store-backend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data="Näytä koodi Gitlabissa!"
+                        >
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- <section id="section-3" class="section clear-float">
+                <h1 class="flex-left">Project 3</h1>
+                <div class="section-window float-right" onclick="showImage(2)"></div>
+                <div class="section-content flex-left">
+                    <div class="section-nav">
+                        <button onclick="showIntroduction(2)">
+                            <div>Introduction</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                        <button onclick="showTechnology(2)">
+                            <div>Technologies</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                    </div>
+                    <div class="hiddable-content">
+                        <div class="section-introduction hiddable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aspernatur at quod laboriosam dolorem quibusdam autem voluptatum voluptas ducimus aliquam optio iure architecto nihil harum maiores, explicabo labore dicta aut. Praesentium dignissimos aperiam modi eaque vero hic adipisci asperiores similique.</div>
+                        <div class="section-details hiddable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, magni.</div>
+                    </div>
+                    <div class="content-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <a href="https://github.com/Sami18007/web-portfolio" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-4" class="section clear-float">
+                <h1 class="flex-right">Project 4</h1>
+                <div class="section-window float-left" onclick="showImage(3)"></div>
+                <div class="section-content flex-right">
+                    <div class="section-nav">
+                        <button onclick="showIntroduction(3)">
+                            <div>Introduction</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                        <button onclick="showTechnology(3)">
+                            <div>Technologies</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                    </div>
+                    <div class="hiddable-content">
+                        <div class="section-introduction hiddable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero accusantium voluptas nihil sit. Odio, consequatur recusandae quidem, incidunt nihil et quisquam quod ipsam, dicta magnam dolores. Pariatur explicabo, nihil voluptatum aut aspernatur beatae quisquam adipisci exercitationem recusandae odio dolorem iste unde sint blanditiis sapiente!</div>
+                        <div class="section-details hiddable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut quaerat ea sapiente, fugit deleniti.</div>
+                    </div>
+                    <div class="content-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <a href="https://github.com/Sami18007/web-portfolio" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-5" class="section clear-float">
+                <h1 class="flex-left">Project 5</h1>
+                <div class="section-window float-right" onclick="showImage(4)"></div>
+                <div class="section-content flex-left">
+                    <div class="section-nav">
+                        <button onclick="showIntroduction(4)">
+                            <div>Introduction</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                        <button onclick="showTechnology(4)">
+                            <div>Technologies</div>
+                            <div class="border-bottom"></div>
+                        </button>
+                    </div>
+                    <div class="hiddable-content">
+                        <div class="section-introduction hiddable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, asperiores voluptatem nobis maiores quos sint reprehenderit ducimus quisquam distinctio assumenda rem alias. Ad laboriosam minus vitae quos, aliquam vero eligendi, veritatis blanditiis, necessitatibus doloremque quas est non. Eveniet praesentium, voluptatibus deleniti molestiae omnis quidem, hic qui culpa sed, blanditiis harum.</div>
+                        <div class="section-details hiddable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, minima?</div>
+                    </div>
+                    <div class="content-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-play-circle"></i>
+                        </a>
+                        <a href="https://github.com/Sami18007/web-portfolio" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+
+        </main>
+
+        <footer id="footer" class="clear-float">
+            <h1>Kiitos mielenkiinnosta!</h1>
+        </footer>
+
+        <div id="image-viewer" onclick="hideImage()">
+            <img />
+        </div>
+    </body>
+
+</html>
